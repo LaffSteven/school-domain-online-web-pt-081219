@@ -34,7 +34,7 @@ class School
     #create a new hash to return
     roster_hash = {}
     
-    #
+    #sorts the names into the new hash
     roster.each do |grade, names|
       roster_hash[grade] = names.sort
     end
