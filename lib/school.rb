@@ -16,9 +16,10 @@ class School
     roster[grade] << name
   end
   
-  def grade(is_grade)
+  def grade(is_in_grade)
+    # detects if a grade's array contains a specific student
     roster.detect do |grade, name|
-      if is_grade == grade
+      if is_in_grade == grade
         return name
       end
     end
