@@ -17,10 +17,10 @@ class School
   end
   
   def grade(is_in_grade)
-    # detects if a grade's array contains a specific student
-    roster.detect do |grade, name|
+    # detects if a grade's 
+    roster.detect do |grade, names|
       if is_in_grade == grade
-        return name
+        return names
       end
     end
   end
